@@ -1,6 +1,6 @@
 $(function() {
 
-  sectionFiltersSelect="<br/>Filter: <select id='section-filter'><option value=\"all\">All</option>";
+  sectionFiltersSelect="<br/>Filter: <select id=\"section-filter\"><option value=\"all\">All</option>";
 
   sections = $("ol li");
   sections.each(function(index, element) {
