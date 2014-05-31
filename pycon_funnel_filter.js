@@ -1,19 +1,18 @@
-var filter = $(function() {
+(function() {
 
-  sectionFiltersSelect="<br/>Filter: <select id=\"section-filter\"><option value=\"all\">All</option>";
+  var sectionFiltersSelect="<br/>Filter: <select id=\"section-filter\"><option value=\"all\">All</option>";
 
-  sections = $("ol li");
+  var sections = $("ol li");
   sections.each(function(index, element) {
 
-    section = $(this).text();
-    sectionTitle = section.split("—")[0].trim();
+    var section = $(this).text();
+    var sectionTitle = section.split("—")[0].trim();
     sectionFiltersSelect += "<option value=\""+sectionTitle+"\">"+sectionTitle+"</option>";
-
   });
 
   sectionFiltersSelect += "</select>";
 
-  ALL_LISTINGS = $("table.listing tbody.link");
+  var ALL_LISTINGS = $("table.listing tbody.link");
 
   alert("Filter applied!");
 
@@ -21,8 +20,8 @@ var filter = $(function() {
 
   $("#section-filter").change(function(){
 
-    choice = $(this).attr("value").trim();
-    filteredTbodys = [];
+    var choice = $(this).attr("value").trim();
+    var filteredTbodys = [];
 
     if (choice.toUpperCase() == "ALL") {
       filteredTbodys = ALL_LISTINGS;
@@ -30,7 +29,7 @@ var filter = $(function() {
 
       ALL_LISTINGS.each(function(index, element) {
 
-        listingSection = $(this).find("tr:eq(1)").find("td:eq(3)").text();
+        var listingSection = $(this).find("tr:eq(1)").find("td:eq(3)").text();
 
         if (listingSection.trim().toUpperCase() == choice.trim().toUpperCase()) {
           filteredTbodys.push($(this));
@@ -43,6 +42,4 @@ var filter = $(function() {
     $("table.listing").append(filteredTbodys);
 
   });
-
-
-});
+})();
