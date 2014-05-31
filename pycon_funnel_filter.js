@@ -1,4 +1,4 @@
-$(function() {
+var filter = $(function() {
 
   sectionFiltersSelect="<br/>Filter: <select id='section-filter'><option value=\"all\">All</option>";
 
