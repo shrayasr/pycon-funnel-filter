@@ -11,7 +11,7 @@ and run it on the Pycon Funnel Page. It will put a dropdown with the different s
 This is tested with latest versions of Google Chrome and Firefox.
 
 **TODO**
-- [ ] Make a landing page for the bookmarklet
+- [X] Make a landing page for the bookmarklet
 
 ---
 
