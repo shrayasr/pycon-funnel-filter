@@ -14,8 +14,6 @@
 
   var ALL_LISTINGS = $("table.listing tbody.link");
 
-  alert("Filter applied!");
-
   $("h2#sessions").after(sectionFiltersSelect);
 
   $("#section-filter").change(function(){
