@@ -15,6 +15,7 @@ This is tested with latest versions of Google Chrome and Firefox.
 **TODO**
 - [X] Make a landing page for the bookmarklet
 - [ ] Create some kind of "build" system to manage releases
+- [ ] Firefox extension
 
 ---
 
