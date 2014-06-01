@@ -1,7 +1,8 @@
 # PyCon-Funnel-Filter
 
+**NEW!** | This is now available on the Google Web store. Go [try it out](https://chrome.google.com/webstore/detail/pycon-funnel-filter/cnioaeeidokidbdgghjbfacmlbonkggj)
+
 Create a bookmark with the following javascript block
- 
  
 ```javascript
 javascript:!function(){var t='<br/>Filter: <select id="section-filter"><option value="all">All</option>',i=$("ol li");i.each(function(){var i=$(this).text(),e=i.split("—")[0].trim();t+='<option value="'+e+'">'+e+"</option>"}),t+="</select>";var e=$("table.listing tbody.link");$("h2#sessions").after(t),$("#section-filter").change(function(){var t=$(this).attr("value").trim(),i=[];"ALL"==t.toUpperCase()?i=e:e.each(function(){var e=$(this).find("tr:eq(1)").find("td:eq(3)").text();e.trim().toUpperCase()==t.trim().toUpperCase()&&i.push($(this))}),$("table.listing tbody.link").remove(),$("table.listing").append(i)})}();
