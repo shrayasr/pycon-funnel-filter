@@ -19,4 +19,4 @@ This is tested with latest versions of Google Chrome and Firefox.
 
 ---
 
-@nischalhp wanted to do this, so kudos to him for the idea. I just quickly hacked it up in JS.
+[@nischalhp](https://github.com/nischalhp) wanted to do this, so kudos to him for the idea. I just quickly hacked it up in JS.
